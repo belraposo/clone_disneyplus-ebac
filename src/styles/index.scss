@@ -1,7 +1,11 @@
 @use 'variables';
+@use 'header';
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'devices';
+@use 'faq';
+@use 'footer';
 
 @font-face {
    font-family: Avenir;
@@ -70,17 +74,79 @@ body {
 .button {
    width: 100%;
    height: 60px;
-   margin-top: 2vw;
-   margin-bottom: 8px;
-   display: block;
+   padding: 8px 14px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    font-size: 18px;
+   letter-spacing: 1px;
    text-transform: uppercase;
+   text-decoration: none;
    color: variables.$offWhiteColor;
    background-color: variables.$mediumPurpleColor;
+   border: 2px solid transparent;
    border-radius: 4px;
    cursor: pointer;
 
    &:hover {
-      background-color: variables.$purpleColor;
+      background-color: lighten(variables.$mediumPurpleColor, 3%);
    }
+
+   &--secondary {
+      background-color: variables.$lightBlueColor;
+
+      &:hover {
+         background-color: variables.$blueColor;
+      }
+   }
+
+   &--dark {
+      background-color: rgba(variables.$blackColor, 0.8);
+      border: 2px solid variables.$offWhiteColor;
+
+      &:hover {
+         background-color: variables.$offWhiteColor;
+         color: variables.$deepBlueColor;
+      }
+   }
+
 }
+
+.image-text-section {
+   padding: 5.6vw;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+ 
+   img {
+     max-width: 100%;
+   }
+ 
+   &__text_container {
+     padding: 0 2vw;
+ 
+     h2 {
+       margin-bottom: 24px;
+     }
+   }
+
+   &--image-full-width {
+      display: block;
+      position: relative;
+
+      img {
+         width: 100%;
+      }
+
+      &__text_container {
+         width: calc(50% - 5.6vw);
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         position: absolute;
+         top: 0;
+         left: 50%;
+      }
+   }
+ }

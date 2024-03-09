@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('[data-tab-button]')
+  const questions = document.querySelectorAll('[data-faq-question]')
+
+  const heroSection = document.querySelector('.hero');
+  const heroHight = heroSection.clientHeight;
   
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY
+
+    if (scrollPosition > heroHight) {
+      hiddenItemsHeader()
+    } else {
+      visibleItemsHeader()
+    }
+  })
+
   for (let x = 0; x < buttons.length; x++) {
     buttons[x].addEventListener('click', function(btn) {
       const tabSelect = btn.target.dataset.tabButton
@@ -11,7 +25,21 @@ document.addEventListener('DOMContentLoaded', function() {
       btn.target.classList.add('shows__tabs__button--is-active')
     })
   }
+
+  for (let y = 0; y < questions.length; y++) {
+    questions[y].addEventListener('click', openClose)
+  }
 })
+
+function hiddenItemsHeader() {
+  const header = document.querySelector('.header')
+  header.classList.add('header--is-hidden')
+}
+
+function visibleItemsHeader() {
+  const header = document.querySelector('.header')
+  header.classList.remove('header--is-hidden')
+}
 
 function hiddenTabs() {
   const hdnTabs = document.querySelectorAll('[data-tab-id]')
@@ -27,4 +55,11 @@ function hiddenActiveTabs() {
   for (let x = 0; x < hdnActiveTabs.length; x++) {
     hdnActiveTabs[x].classList.remove('shows__tabs__button--is-active')
   }
+}
+
+function openClose(element) {
+  const classFaq = 'faq__questions__item--is-open'
+  const principalElement = element.target.parentNode
+
+  principalElement.classList.toggle(classFaq)
 }

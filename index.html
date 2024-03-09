@@ -7,14 +7,31 @@
   <title>Clone Disney+ - Projeto 4 EBAC</title>
 </head>
 <body>
+  <header class="header">
+    <div class="header__container">
+      <h1>
+        <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney Plus">
+      </h1>
+      <ul class="header__links">
+        <li class="header__links__item">
+          <a class="button button--secondary" href="https://www.disneyplus.com/pt-br/sign-up">Assine Agora</a>
+        </li>
+        <li class="header__links__item">
+          <a class="button button--dark" href="https://www.disneyplus.com/identity/login">Entrar</a>
+        </li>
+      </ul>
+    </div>
+  </header>
   <section class="hero">
     <div class="hero__content">
-      <h1 class="hero__content__branding">
+      <div class="hero__content__branding">
         <img src="./dist/images/disneyplus.svg" alt="Disney Plus">
-      </h1>
+      </div>
       <h3 class="title--small">As melhores histórias em um só lugar.</h3>
       <p>
-        <a href="https://www.disneyplus.com/pt-br?cid=DSS-Search-Google-71700000075038504-&s_kwcid=AL!8468!3!576459364510!e!!g!!disneyplus&gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO4pB9A2XNNZMOpzc0cpTv75Ik_CFHoV9CX8HmkDnLyQxaOjDEq07dxoC3KsQAvD_BwE&gclsrc=aw.ds" class="link-text">Assinar o Disney+</a>
+        <a href="https://www.disneyplus.com/pt-br?cid=DSS-Search-Google-71700000075038504-&s_kwcid=AL!8468!3!576459364510!e!!g!!
+        disneyplus&gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO4pB9A2XNNZMOpzc0cpTv75Ik_CFHoV9CX8HmkDnLyQxaOjDEq07dxoC3KsQAvD_BwE
+        &gclsrc=aw.ds" class="link-text">Assinar o Disney+</a>
         <br>
         <span class="text">R$27,90/mês ou R$279,90/ano à vista*</span>
       </p>
@@ -124,6 +141,188 @@
     </ul>
     <p class="text--small">*O preço pode variar caso a assinatura seja feita através de outras plataformas.</p>
   </section>
+  <section class="image-text-section">
+    <img src="./dist/images/tv_pc_tablet_celular.png" alt="Assista como quiser, com TV, laptop, tablet e celular">
+    <div class="image-text-section__text_container">
+      <h2 class="title">Assista do seu jeito</h2>
+      <p class="text--big">
+        Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. 
+        Nossa seleção de títulos em 4k não para de crescer. 
+        Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+      </p>
+    </div>
+  </section>
+  <section class="image-text-section--image-full-width">
+    <img src="./dist/images/fundo_rei_leao.png" alt="Baixe filmes: Rei Leão">
+    <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+      <h2 class="title">Baixe filmes e séries</h2>
+      <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você até mesmo sem internet.</p>
+    </div>
+  </section>
+  <section class="available-devices">
+    <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+    <ul class="available-devices__list">
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+        <h4 class="title--small">Computador</h4>
+        <ul class="text">
+          <li>MacOS</li>
+          <li>Chrome OS</li>
+          <li>PC Windows</li>
+        </ul>
+      </li>
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/tv.png" alt="TV">
+        <h4 class="title--small">TV</h4>
+        <ul class="text">
+          <li>Amazon Fire TV</li>
+          <li>Android TV</li>
+          <li>Apple TV</li>
+          <li>Chromecast</li>
+          <li>TVs LG</li>
+          <li>Roku</li>
+          <li>Samsung</li>
+        </ul>
+      </li>
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/videogames.png" alt="Videogames">
+        <h4 class="title--small">Videogames</h4>
+        <ul class="text">
+          <li>PS4</li>
+          <li>PS5</li>
+          <li>Xbox One</li>
+          <li>Xbox Series X</li>
+          <li>Xbox Series S</li>
+        </ul>
+      </li>
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/celular.png" alt="Celulares e tablets">
+        <h4 class="title--small">Celulares e tablets</h4>
+        <ul class="text">
+          <li>Tablets Amazon Fire</li>
+          <li>Celulares e Tablets Android</li>
+          <li>iPhone e iPad</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2 class="title">Perguntas frequentes</h2>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">O que está incluído no Disney+?</div>
+        <div class="faq__questions__item__answer text--big">
+          Disney+ incluirá conteúdo de suas marcas familiares, incluindo Disney, Marvel, Star Wars e Pixar. Também foi confirmado que 
+          o conteúdo da National Geographic também será incluído na plataforma. Foi revelado que o Disney+ incluirá aproximadamente 7.000 
+          episódios de séries de televisão e 400 a 500 filmes disponíveis. E o Disney+ também incluirá novos conteúdos exclusivos, 
+          incluindo um programa da Marvel baseado em Loki, um programa de Star Wars chamado The Mandalorian, um programa da Pixar baseado 
+          em Monsters Inc e novos filmes como Noelle e Lady & The Tramp.
+        </div>
+      </li>
+    </ul>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">O que não estará no Disney Plus?</div>
+        <div class="faq__questions__item__answer text--big">
+          A Disney anunciou que o novo serviço de streaming, Disney+, não incluirá nenhum conteúdo não familiar, o que significa que filmes 
+          como Deadpool ou Logan não chegarão ao serviço de streaming. Isso também significará que os programas da Marvel na Netflix, como 
+          Demolidor, não serão transferidos para o Disney+. Conteúdo classificado como R, como aqueles encontrados nos canais FX, será 
+          encontrado na plataforma mais voltada para adultos da Disney, o Hulu. Outros filmes lançados pelo selo Touchstone da Disney,
+          como Gangs of New York e Apocalypto, também devem ser mantidos no Hulu.
+        </div>
+      </li>
+    </ul>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">Ja é assinante do Disney+?</div>
+        <div class="faq__questions__item__answer text--big">
+          Assine o Star+ usando o mesmo login e senha do Disney+, assim você terá acesso a ambos os serviços por um preço promocional. 
+          Para ser assinante, você deve ter 18 anos.
+        </div>
+      </li>
+    </ul>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">Em quantos dispositivos posso assistir ao mesmo tempo?</div>
+        <div class="faq__questions__item__answer text--big">
+          Com o Combo+, você tem entretenimento em dobro. Você pode assistir ao Disney+ em 4 dispositivos compatíveis simultaneamente 
+          e ao Star+ em mais 4.
+        </div>
+      </li>
+    </ul>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">Posso baixar conteúdo?</div>
+        <div class="faq__questions__item__answer text--big">      
+          Com o Combo+, você pode baixar conteúdo do Disney+ em 10 dispositivos e do Star+ em mais 10.
+        </div>
+      </li>
+    </ul>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">Quais formas de pagamento posso utilizar?</div>
+        <div class="faq__questions__item__answer text--big">
+          Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google 
+          Play Store, App Store da Apple; Mercado Livre e provedores locais de TV, telefonia e internet.
+        </div>
+      </li>
+    </ul>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">O Star+ possui controle parental?</div>
+        <div class="faq__questions__item__answer text--big">
+          Sim. Com o controle parental do Star+, você poderá controlar o acesso a conteúdos de acordo com a classificação indicativa 
+          selecionada, oferecendo maior segurança aos usuários da sua família.
+        </div>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney Plus">
+      <ul class="footer__links">
+        <li class="footer__links__item">
+          <div class="language-selector">
+            <img src="./dist/images/icones/globe.svg" alt="Globe Language">
+            <select class="text--small">
+              <option>English</option>
+              <option selected>Português</option>
+            </select>
+          </div>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://disneytermsofuse.com/brazilian-portuguese/">Termos e Condições de Uso</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://www.disneyplus.com/legal/pol%C3%ADtica-de-privacidade">Termos de Privacidade</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://www.disneyplus.com/pt-br/legal/prote%C3%A7%C3%A3o-de-dados-no-brasil">Proteção de Dados no Brasil</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=disneyplus01&type=disneyplus">Anúncios personalizados</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://help.disneyplus.com/pt-BR/article/disneyplus-devices-supported">Dispositivos compatíveis</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://help.disneyplus.com/pt-BR/">Ajuda</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="https://help.disneyplus.com/pt-BR/">Sobre o Disney+</a>
+        </li>
+      </ul>
+      <p class="text--small">
+        ® 2024 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. 
+        Conteúdo sujeito a disponibilidade.
+      </p>
+      <p class="text--small">
+        Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por 
+        The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – 
+        CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+      </p>
+    </div>
+  </footer>
 
   <script src="./src/index.js"></script>
 </body>
