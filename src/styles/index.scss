@@ -32,26 +32,50 @@
 
 .title {
    @include title;
+
+   @media (max-width: 768px) {
+      @include title(24px)
+   }
 }
 
 .title--small {
    @include title(28px);
+
+   @media (max-width: 768px) {
+      @include title(22px)
+   }
 }
 
 .title--big {
    @include title(44px);
+
+   @media (max-width: 768px) {
+      @include title(26px)
+   }
 }
 
 .text {
    @include text;
+
+   @media (max-width: 768px) {
+      @include text(14px)
+   }
 }
 
 .text--small {
    @include text(12px);
+
+   @media (max-width: 768px) {
+      @include text(11px)
+   }
 }
 
 .text--big {
    @include text(18px);
+
+   @media (max-width: 768px) {
+      @include text(15px)
+   }
 }
 
 .link-text {
@@ -84,7 +108,7 @@ body {
    text-decoration: none;
    color: variables.$offWhiteColor;
    background-color: variables.$mediumPurpleColor;
-   border: 2px solid transparent;
+   border: 1px solid transparent;
    border-radius: 4px;
    cursor: pointer;
 
@@ -102,7 +126,7 @@ body {
 
    &--dark {
       background-color: rgba(variables.$blackColor, 0.8);
-      border: 2px solid variables.$offWhiteColor;
+      border: 1px solid variables.$offWhiteColor;
 
       &:hover {
          background-color: variables.$offWhiteColor;
@@ -117,7 +141,11 @@ body {
    display: grid;
    grid-template-columns: 1fr 1fr;
    align-items: center;
- 
+   
+   @media (max-width: 768px) { 
+      display: block;
+   }
+   
    img {
      max-width: 100%;
    }
@@ -147,6 +175,13 @@ body {
          position: absolute;
          top: 0;
          left: 50%;
+
+         @media (max-width: 768px) {
+            width: 100%;
+            position: relative;
+            left: 0;
+         }
       }
    }
+
  }

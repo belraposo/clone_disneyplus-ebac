@@ -10,6 +10,14 @@
     display: flex;
     justify-content: space-around;
 
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    .button {
+      margin-top: 24px;
+    }
+
     &__item {
       width: 100%;
       max-width: 380px;
@@ -31,6 +39,7 @@
         display: block;
       }
     }
+
   }
 
   p {
